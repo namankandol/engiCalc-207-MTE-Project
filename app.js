@@ -1,7 +1,14 @@
 let buttonRatio, valueOfL, valueOfD, valueOfB, slendernessRatio;
 
 function getButtonValue(e){
-  
+  document.querySelectorAll('.options').forEach((btn)=>{
+    if(btn.id == event.target.id){
+      btn.classList.add('clicked')
+    }
+    else{
+      btn.classList.remove('clicked')
+    }
+  })
   buttonRatio = parseFloat(e.value)
   console.log(buttonRatio)
 }
