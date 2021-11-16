@@ -1,0 +1,156 @@
+:root{
+  --background: white;
+  --text-color: rgb(47, 47, 47);
+  --button-text-color: rgb(110, 110, 110);
+  --border-color: rgb(204, 204, 204);
+  --accent-color: rgb(23, 151, 255);
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'PT Sans', sans-serif;
+}
+
+body{
+  text-align: center;
+  letter-spacing: 1px;
+  color: rgb(47, 47, 47);
+  background-color: var(--background);
+}
+
+main{
+  padding: 0 5rem;
+}
+
+.dark{
+  --background: rgb(29, 29, 29);
+  --text-color: rgb(223, 223, 223);
+  --button-text-color: rgb(105, 105, 105);
+  --border-color: rgb(75, 74, 74);
+}
+
+.clicked{
+  color: var(--accent-color);
+  border-color: var(--accent-color);
+}
+
+nav{
+  padding: 1rem 2rem ;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.5rem ;
+}
+
+.logo-span{
+  font-weight: 900;
+}
+
+.icons>i:hover{
+  color: var(--accent-color);
+}
+
+.reset{
+  color: var(--text-color);
+}
+
+.mode-change{
+  margin-left: 2rem;
+  color: var(--text-color);
+}
+
+nav>ul{
+  color: var(--text-color);
+  list-style-type: none;
+  font-weight: 300;
+}
+
+.heading{
+  color: var(--text-color);
+  margin: 4rem 0 6rem ;
+  font-weight: 500;
+  font-size: 2rem;
+}
+
+.type-of-ends{
+  color: var(--text-color);
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+button{
+  padding: 1rem 2.5rem;
+  font-size: 1rem;
+  font-weight: 400;
+  background-color: var(--background);
+  border: 1.4px solid var(--border-color);
+  color: var(--button-text-color);
+  border-radius: 5px;
+  margin: 0 1rem 5rem;
+}
+
+
+button:hover{
+  color: var(--accent-color);
+  border-color: var(--accent-color);
+  cursor: pointer;
+}
+
+
+
+label{
+  font-size: 1.2rem;
+  margin-right: 0.5rem;
+  font-weight: 400;
+  color: var(--text-color);
+}
+
+input{
+  margin-right: 2rem;
+  background-color: var(--background);
+  border: 1.4px solid var(--border-color);
+  padding: 0.85rem 0.4rem;
+  border-radius: 5px;
+  color: var(--text-color);
+  font-size: 1.3rem;
+  text-align: center;
+}
+
+input::placeholder{
+  text-align: right;
+  font-size: 1.2rem;
+}
+
+
+input:focus{
+  border: none;
+  border-color: var(--accent-color);
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+
+.output{
+  margin-top: 4rem ;
+  color: var(--accent-color);
+  font-size: 3.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+}
+.output>h1{
+  margin-inline: 2rem;
+}
+

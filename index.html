@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- FONT AWESOME CDN  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- STYLESHEET -->
+  <link rel="stylesheet" href="styles.css">
+  <!-- GOOGLE FONT -->
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet"> 
+  <title>207 calculator</title>
+</head>
+
+
+<body class="">
+
+  <!-- NAVBAR  -->
+  <nav>
+    <ul>
+      <li>engi<span class="logo-span">Calc</span></li>
+    </ul>
+    <div class="icons">
+      <i class="fas fa-redo reset"></i>
+      <i class="far fa-lightbulb mode-change"></i>
+    </div>
+  </nav>
+
+  <!-- MAIN -->
+  <main>
+
+    <div class="heading">
+      <p>Slenderness Ratio Calculator</p>
+    </div>
+
+    <p class="type-of-ends">Type of Ends</p>
+    <div class="buttons">
+      <button onclick="getButtonValue(this)" value="1" class="options">Both Pinned Ends</button>
+      <button onclick="getButtonValue(this)" value="0.699" class="options">One Pinned and One Fixed End</button>
+      <button onclick="getButtonValue(this)" value="0.5" class="options">Both Fixed Ends</button>
+      <button onclick="getButtonValue(this)" value="2" class="options">One Fixed End and One Free End</button>
+    </div>
+
+    <div class="inputs">
+      
+      <label for="" class="vol">Value of L</label>
+        <input vol type="number" placeholder="mm">
+
+      <label for="" class="vod">Value of depth</label>
+        <input vod type="number" placeholder="mm">
+
+      <label for="" class="vob">Value of width</label>
+        <input vob type="number" placeholder="mm">
+    </div>
+
+    <div class="output">
+      <h1 class="answers"></h1>
+    </div>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
