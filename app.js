@@ -44,6 +44,9 @@ document.querySelector('.reset').addEventListener('click', ()=>{
   document.querySelector('[vol]').value = "";
   document.querySelector('[vod]').value = "";
   document.querySelector('[vob]').value = "";
+  document.querySelectorAll('button').forEach((e)=>{
+    e.classList.remove('clicked')
+  })
 })
 
 
